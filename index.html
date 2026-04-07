@@ -1329,9 +1329,7 @@
 /* ════════════════════════════════════════
    ⚙️ CONFIGURATION — FILL IN YOUR KEYS
 ════════════════════════════════════════ */
-const SUPABASE_URL  = 'https://baeycohgtjfuliagmvbf.supabase.co';   // e.g. https://xyzabc.supabase.co
-const SUPABASE_KEY  = 'sb_publishable_eisevbXwoov5ozJnzjXOEQ_CyajEKLm'; // your anon/public key
-const ADMIN_EMAIL   = 'shivakumarinduri19@gmail.com';   // admin user email
+const SUPABASE_URL  = ';   // admin user email
 const ROUND_TIMER   = 60;   // seconds per round
 const TOTAL_ROUNDS  = 15;   // number of locations per game
 
@@ -1365,7 +1363,7 @@ let supabase = null;
 let usingDemo = false; // demo mode when no Supabase keys provided
 
 function initSupabase() {
-  if (SUPABASE_URL === 'https://baeycohgtjfuliagmvbf.supabase.co' || SUPABASE_KEY === 'sb_publishable_eisevbXwoov5ozJnzjXOEQ_CyajEKLm') {
+  if (SUPABASE_URL === ' || SUPABASE_KEY === '') {
     console.warn('Supabase not configured — running in demo mode');
     usingDemo = true;
     return false;
